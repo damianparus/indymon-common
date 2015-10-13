@@ -4,7 +4,7 @@ public class CheckStatus {
 
     private String symbol;
     private int status;
-    private long value;
+    private float value;
     private String message;
 
     public String getSymbol() {
@@ -23,11 +23,11 @@ public class CheckStatus {
         this.status = status;
     }
 
-    public long getValue() {
+    public float getValue() {
         return value;
     }
 
-    public void setValue(long value) {
+    public void setValue(float value) {
         this.value = value;
     }
 
