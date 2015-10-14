@@ -6,6 +6,7 @@ public class CheckStatus {
     private int status;
     private float value;
     private String message;
+    private int expireTime;
 
     public String getSymbol() {
         return symbol;
@@ -37,5 +38,13 @@ public class CheckStatus {
 
     public void setMessage(String message) {
         this.message = message;
+    }
+
+    public int getExpireTime() {
+        return expireTime;
+    }
+
+    public void setExpireTime(int expireTime) {
+        this.expireTime = expireTime;
     }
 }
