@@ -11,6 +11,7 @@ public abstract class PresenterDefinition {
     private int top;
     private int width;
     private int height;
+    private String clickUrl;
 
     public String getSymbol() {
         return symbol;
@@ -82,5 +83,13 @@ public abstract class PresenterDefinition {
 
     public void setHeight(int height) {
         this.height = height;
+    }
+
+    public String getClickUrl() {
+        return clickUrl;
+    }
+
+    public void setClickUrl(String clickUrl) {
+        this.clickUrl = clickUrl;
     }
 }
