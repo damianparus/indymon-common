@@ -92,4 +92,12 @@ public abstract class PresenterDefinition {
     public void setClickAction(String clickAction) {
         this.clickAction = clickAction;
     }
+
+    public int getRight() {
+        return left + width;
+    }
+
+    public int getBottom() {
+        return top + height;
+    }
 }
