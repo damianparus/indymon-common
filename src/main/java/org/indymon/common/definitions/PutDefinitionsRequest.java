@@ -4,33 +4,36 @@ import org.indymon.common.model.CheckDefinition;
 import org.indymon.common.model.PresenterAggregatorDefinition;
 import org.indymon.common.model.PresenterCheckDefinition;
 
+import java.util.ArrayList;
+
 public class PutDefinitionsRequest {
 
-    private CheckDefinition checks[];
-    private PresenterCheckDefinition presentersChecks[];
-    private PresenterAggregatorDefinition presentersAggregators[];
+    private ArrayList<CheckDefinition> checks;
+    private ArrayList<PresenterCheckDefinition> presentersChecks;
+    private ArrayList<PresenterAggregatorDefinition> presentersAggregators;
 
-    public CheckDefinition[] getChecks() {
+    public ArrayList<CheckDefinition> getChecks() {
         return checks;
     }
 
-    public void setChecks(CheckDefinition[] checks) {
+    public void setChecks(ArrayList<CheckDefinition> checks) {
         this.checks = checks;
     }
 
-    public PresenterCheckDefinition[] getPresentersChecks() {
+    public ArrayList<PresenterCheckDefinition> getPresentersChecks() {
         return presentersChecks;
     }
 
-    public void setPresentersChecks(PresenterCheckDefinition[] presentersChecks) {
+    public void setPresentersChecks(ArrayList<PresenterCheckDefinition> presentersChecks) {
         this.presentersChecks = presentersChecks;
     }
 
-    public PresenterAggregatorDefinition[] getPresentersAggregators() {
+    public ArrayList<PresenterAggregatorDefinition> getPresentersAggregators() {
         return presentersAggregators;
     }
 
-    public void setPresentersAggregators(PresenterAggregatorDefinition[] presentersAggregators) {
+    public void setPresentersAggregators(ArrayList<PresenterAggregatorDefinition> presentersAggregators) {
         this.presentersAggregators = presentersAggregators;
     }
+
 }
