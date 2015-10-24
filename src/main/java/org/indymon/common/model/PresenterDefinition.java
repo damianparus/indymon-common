@@ -77,12 +77,28 @@ public abstract class PresenterDefinition {
         this.width = width;
     }
 
+    public void setRight(int right) {
+        this.width = right - this.left;
+    }
+
+    public void setMaxRight(int rightToCheck) {
+        this.width = Math.max(this.width, rightToCheck - this.left);
+    }
+
     public int getHeight() {
         return height;
     }
 
     public void setHeight(int height) {
         this.height = height;
+    }
+
+    public void setBottom(int bottom) {
+        this.height = bottom - this.top;
+    }
+
+    public void setMaxBottom(int bottomToCheck) {
+        this.height = Math.max(this.height, bottomToCheck - this.top);
     }
 
     public String getClickAction() {
