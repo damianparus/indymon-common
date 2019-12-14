@@ -26,11 +26,11 @@ public abstract class PresenterDefinition {
         this.symbol = symbol;
     }
 
-    public int getZIndex() {
+    public int getzIndex() {
         return zIndex;
     }
 
-    public void setZIndex(int zIndex) {
+    public void setzIndex(int zIndex) {
         this.zIndex = zIndex;
     }
 
