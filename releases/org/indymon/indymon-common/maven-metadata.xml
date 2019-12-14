@@ -3,10 +3,12 @@
   <groupId>org.indymon</groupId>
   <artifactId>indymon-common</artifactId>
   <versioning>
-    <release>1.0.0.RELEASE</release>
+    <latest>1.0.2.RELEASE</latest>
+    <release>1.0.2.RELEASE</release>
     <versions>
       <version>1.0.0.RELEASE</version>
+      <version>1.0.2.RELEASE</version>
     </versions>
-    <lastUpdated>20151024191449</lastUpdated>
+    <lastUpdated>20191214173408</lastUpdated>
   </versioning>
 </metadata>
