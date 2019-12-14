@@ -4,14 +4,19 @@ public abstract class PresenterDefinition {
 
     private String symbol;
     private int zIndex;
-    private int fontSize;
     private double minScale;
+    private String clickAction;
+
     private String title;
+    private int titleFontSize;
+
+    private String description;
+    private int descriptionFontSize;
+
     private int left;
     private int top;
     private int width;
     private int height;
-    private String clickAction;
 
     public String getSymbol() {
         return symbol;
@@ -21,20 +26,20 @@ public abstract class PresenterDefinition {
         this.symbol = symbol;
     }
 
-    public int getzIndex() {
+    public int getZIndex() {
         return zIndex;
     }
 
-    public void setzIndex(int zIndex) {
+    public void setZIndex(int zIndex) {
         this.zIndex = zIndex;
     }
 
-    public int getFontSize() {
-        return fontSize;
+    public int getTitleFontSize() {
+        return titleFontSize;
     }
 
-    public void setFontSize(int fontSize) {
-        this.fontSize = fontSize;
+    public void setTitleFontSize(int titleFontSize) {
+        this.titleFontSize = titleFontSize;
     }
 
     public double getMinScale() {
@@ -115,5 +120,21 @@ public abstract class PresenterDefinition {
 
     public int getBottom() {
         return top + height;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public int getDescriptionFontSize() {
+        return descriptionFontSize;
+    }
+
+    public void setDescriptionFontSize(int descriptionFontSize) {
+        this.descriptionFontSize = descriptionFontSize;
     }
 }

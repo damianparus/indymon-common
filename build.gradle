@@ -35,6 +35,6 @@ repositories {
 dependencies {
 }
 
-task wrapper(type: Wrapper) {
-    gradleVersion = '2.6'
+wrapper {
+    gradleVersion = '5.6'
 }
